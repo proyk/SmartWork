@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/line-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"/>
+<link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/scrollbar.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript" src="js/json2.js"></script>
+    <style>
+        
+        .first {
+            background: linear-gradient(45deg,#4099ff,#73b4ff);
+        }
+
+        .sec {
+            background: linear-gradient(45deg,#2ed8b6,#59e0c5);
+        }
+
+        .third {
+            background: linear-gradient(45deg,#FFB64D,#ffcb80);
+        }
+
+        .fourth {
+            background: linear-gradient(45deg,#FF5370,#ff869a);
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+	<div class="wrapper">
+		
+
+
+		<header>
+			<div class="container">
+				<div class="header-data">
+					<div class="logo">
+						<a href="index.aspx" title=""><img src="images/sw2.png" alt=""/></a>
+					</div><!--logo end-->
+					<div class="search-bar">
+						<form>
+							<input type="text" name="search" placeholder="Search...">
+							<button type="submit"><i class="la la-search"></i></button>
+						</form>
+					</div><!--search-bar end-->
+					<nav>
+						<ul>
+							<li>
+								<a href="index.aspx" title="">
+									<span><img src="images/icon1.png" alt=""></span>
+									Home
+								</a>
+							</li>
+							
+							<li>
+								<a href="#" title="">
+									<span><img src="images/icon3.png" alt=""></span>
+									Projects
+								</a>
+                                <ul>
+									<li><a href="postedproject.aspx" title="">Posted Project</a></li>
+									<li><a href="project_allocated.aspx" title="">Project Allocated</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="showprofile.aspx" title="">
+									<span><img src="images/icon4.png" alt=""></span>
+									Profiles
+								</a>
+								<ul>
+									<li><a href="profile.aspx" title="">Edit Profile</a></li>
+									
+								</ul>
+							</li>
+							<li>
+								<a href="works.aspx" title="">
+									<span><img src="images/icon5.png" alt=""></span>
+									Works
+								</a>
+							</li>
+							<li>
+								<a href="messages.aspx" title="" class="not-box-open">
+									<span><img src="images/icon6.png" alt=""></span>
+									Messages
+								</a>
+								
+							</li>
+							
+						</ul>
+					</nav><!--nav end-->
+					<div class="menu-btn">
+						<a href="#" title=""><i class="fa fa-bars"></i></a>
+					</div><!--menu-btn end-->
+					<div class="user-account">
+						<div class="user-info">
+							<img id="pf" runat="server"  height="30" width="30" src="http://via.placeholder.com/30x30" alt=""/>
+							<a href="#" title=""><asp:Label ID="username" runat="server"></asp:Label>
+							<i class="la la-sort-down"></i></a>
+						</div>
+						<div class="user-account-settingss">
+							
+							<h3 class="tc"><a href="logout.aspx" title="">Logout</a></h3>
+						</div><!--user-account-settingss end-->
+					</div>
+				</div><!--header-data end-->
+			</div>
+		</header><!--header end-->
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    </div>
+    </form>
+    
+    <footer class="page-footer font-small  text-light" style="background-color:#1d4354">
+        <br />
+        <div style="text-align:center" class="text-capitalize font-weight-bold">
+            All Rights are Reserved smartwork Admin*
+        </div>
+    
+   <hr />
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright :
+    <a href="index.aspx" style="color:white;""><u>smartwork.com</u></a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+   
+</body>
+</html>
